@@ -1,0 +1,424 @@
+<!DOCTYPE html>
+<html lang="nl">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Salon Amara — Premium Kapsalon Leiden</title>
+  <meta name="description" content="Salon Amara in Leiden. Dames, heren en beauty treatments waar vakmanschap en persoonlijke aandacht voorop staan." />
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,400;0,600;0,700;1,400&family=DM+Sans:wght@300;400;500;600;700&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="/src/styles.css" />
+</head>
+<body>
+  <!-- Announcement Bar -->
+  <div id="announcement-bar" class="announcement-bar" style="display:none"></div>
+
+  <!-- Navigation -->
+  <nav class="nav" id="nav">
+    <a href="#" class="nav__logo">Salon <span class="nav__logo-accent">Amara</span></a>
+    <div class="nav__links">
+      <a href="#over-ons" class="nav__link">Over ons</a>
+      <a href="#diensten" class="nav__link">Diensten</a>
+      <a href="#team" class="nav__link">Team</a>
+      <a href="#reviews" class="nav__link">Reviews</a>
+      <a href="#contact" class="nav__link">Contact</a>
+      <a href="#" class="nav__link nav__vacatures-link" id="nav-vacatures" style="display:none">Vacatures <span class="nav__badge" id="nav-vacatures-badge"></span></a>
+      <a href="#booking" class="btn btn--primary btn--sm magnetic-btn">Afspraak</a>
+    </div>
+    <button class="nav__burger" id="burger" aria-label="Menu">
+      <span></span><span></span><span></span>
+    </button>
+  </nav>
+
+  <!-- Mobile Menu -->
+  <div class="mobile-menu" id="mobile-menu">
+    <div class="mobile-menu__inner">
+      <a href="#over-ons" class="mobile-menu__link">Over ons</a>
+      <a href="#diensten" class="mobile-menu__link">Diensten</a>
+      <a href="#team" class="mobile-menu__link">Team</a>
+      <a href="#reviews" class="mobile-menu__link">Reviews</a>
+      <a href="#contact" class="mobile-menu__link">Contact</a>
+      <a href="#booking" class="btn btn--primary btn--lg mobile-menu__cta">Afspraak maken</a>
+      <div class="mobile-menu__contact">
+        <a href="tel:0712345678">071 - 234 5678</a>
+      </div>
+    </div>
+  </div>
+
+  <!-- Hero -->
+  <section class="hero" id="hero">
+    <div class="hero__bg">
+      <div class="hero__bg-img"></div>
+      <div class="hero__overlay"></div>
+      <div class="hero__grain"></div>
+    </div>
+    <div class="hero__content">
+      <div class="hero__tag">Premium kapsalon in Leiden</div>
+      <h1 class="hero__title">
+        <span class="hero__title-line">Schoonheid</span>
+        <span class="hero__title-line hero__title-line--2">begint <span class="hero__title-accent">hier</span></span>
+      </h1>
+      <p class="hero__sub">Bij Salon Amara geloven we dat ieder mens uniek is. Ons team van specialisten creëert looks die passen bij wie je bent, niet bij wat de trend voorschrijft.</p>
+      <div class="hero__actions">
+        <a href="#booking" class="btn btn--primary btn--lg magnetic-btn">
+          <span>Boek een afspraak</span>
+          <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M5 12h14M12 5l7 7-7 7"/></svg>
+        </a>
+        <a href="tel:0712345678" class="btn btn--ghost btn--lg magnetic-btn">071 - 234 5678</a>
+      </div>
+    </div>
+    <div class="hero__scroll-indicator">
+      <span>Scroll</span>
+      <div class="hero__scroll-line"></div>
+    </div>
+  </section>
+
+  <!-- About -->
+  <section class="about" id="over-ons">
+    <div class="about__layout">
+      <div class="about__images reveal reveal--left">
+        <div class="about__img about__img--main">
+          <img src="https://images.unsplash.com/photo-1560066984-138dadb4c035?w=800&q=80" alt="Salon Amara interieur" loading="lazy" />
+        </div>
+        <div class="about__img about__img--float reveal reveal--up" data-delay="200">
+          <img src="https://images.unsplash.com/photo-1522337360788-8b13dee7a37e?w=400&q=80" alt="Styling detail" loading="lazy" />
+        </div>
+      </div>
+      <div class="about__text">
+        <span class="label reveal">Over ons</span>
+        <h2 class="section-title reveal" data-delay="100">Waar vakmanschap<br>samenkomt met <span class="text-accent">warmte</span></h2>
+        <p class="reveal" data-delay="200">Salon Amara is opgericht door Amara Yilmaz met een duidelijke visie: een salon waar iedereen zich welkom voelt en waar kwaliteit geen compromissen kent. Gelegen aan de Breestraat in het hart van Leiden, combineren we ambachtelijke technieken met de nieuwste trends.</p>
+        <p class="reveal" data-delay="300">Ons team van vier ervaren stylisten brengt samen meer dan veertig jaar ervaring mee. Van een klassieke coupe tot een complete metamorfose, van natuurlijke highlights tot verzorgende treatments: bij Amara ben je in vertrouwde handen.</p>
+        <div class="about__stats reveal" data-delay="400">
+          <div class="about__stat">
+            <span class="about__stat-number">12+</span>
+            <span class="about__stat-label">Jaar ervaring</span>
+          </div>
+          <div class="about__stat">
+            <span class="about__stat-number">4</span>
+            <span class="about__stat-label">Specialisten</span>
+          </div>
+          <div class="about__stat">
+            <span class="about__stat-number">2.400+</span>
+            <span class="about__stat-label">Tevreden klanten</span>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Services -->
+  <section class="services" id="diensten">
+    <div class="services__header">
+      <span class="label label--light reveal">Diensten</span>
+      <h2 class="section-title section-title--light reveal" data-delay="100">Onze behandelingen</h2>
+      <p class="services__sub reveal" data-delay="200">Van knippen en kleuren tot beauty treatments. Ontdek wat Salon Amara voor jou kan betekenen.</p>
+    </div>
+    <div class="services__grid">
+      <!-- Dames -->
+      <div class="services__category reveal" data-delay="100">
+        <div class="service-accordion" data-category="dames">
+          <button class="service-accordion__trigger">
+            <span class="service-accordion__number">01</span>
+            <h3 class="service-accordion__title">Dames</h3>
+            <span class="service-accordion__toggle">+</span>
+          </button>
+          <div class="service-accordion__body">
+            <div class="service-accordion__content">
+              <ul class="price-list">
+                <li><span>Knippen</span><span>vanaf 39,50</span></li>
+                <li><span>Knippen + Föhnen</span><span>vanaf 52,50</span></li>
+                <li><span>Föhnen / Stylen</span><span>vanaf 27,50</span></li>
+                <li><span>Highlights halve hoofd</span><span>vanaf 79,00</span></li>
+                <li><span>Highlights hele hoofd</span><span>vanaf 99,00</span></li>
+                <li><span>Kleuring uitgroei</span><span>vanaf 55,00</span></li>
+                <li><span>Kleuring volledig</span><span>vanaf 69,00</span></li>
+                <li><span>Balayage</span><span>vanaf 120,00</span></li>
+                <li><span>Keratine behandeling</span><span>vanaf 149,00</span></li>
+                <li><span>Bruidskapsels</span><span>op aanvraag</span></li>
+              </ul>
+            </div>
+          </div>
+        </div>
+      </div>
+      <!-- Heren -->
+      <div class="services__category reveal" data-delay="200">
+        <div class="service-accordion" data-category="heren">
+          <button class="service-accordion__trigger">
+            <span class="service-accordion__number">02</span>
+            <h3 class="service-accordion__title">Heren</h3>
+            <span class="service-accordion__toggle">+</span>
+          </button>
+          <div class="service-accordion__body">
+            <div class="service-accordion__content">
+              <ul class="price-list">
+                <li><span>Knippen</span><span>vanaf 27,50</span></li>
+                <li><span>Knippen + Baard</span><span>vanaf 37,50</span></li>
+                <li><span>Baard trimmen</span><span>vanaf 15,00</span></li>
+                <li><span>Scheren (hot towel)</span><span>vanaf 22,50</span></li>
+                <li><span>Knippen + Wassen + Stylen</span><span>vanaf 32,50</span></li>
+                <li><span>Kleuring heren</span><span>vanaf 35,00</span></li>
+              </ul>
+            </div>
+          </div>
+        </div>
+      </div>
+      <!-- Kinderen -->
+      <div class="services__category reveal" data-delay="300">
+        <div class="service-accordion" data-category="kinderen">
+          <button class="service-accordion__trigger">
+            <span class="service-accordion__number">03</span>
+            <h3 class="service-accordion__title">Kinderen</h3>
+            <span class="service-accordion__toggle">+</span>
+          </button>
+          <div class="service-accordion__body">
+            <div class="service-accordion__content">
+              <ul class="price-list">
+                <li><span>Knippen (t/m 5 jaar)</span><span>vanaf 14,50</span></li>
+                <li><span>Knippen (6 t/m 11 jaar)</span><span>vanaf 19,50</span></li>
+                <li><span>Knippen meisjes lang haar</span><span>vanaf 22,50</span></li>
+                <li><span>Knippen tieners (12+)</span><span>vanaf 24,50</span></li>
+              </ul>
+            </div>
+          </div>
+        </div>
+      </div>
+      <!-- Beauty / Nagels -->
+      <div class="services__category reveal" data-delay="400">
+        <div class="service-accordion" data-category="beauty">
+          <button class="service-accordion__trigger">
+            <span class="service-accordion__number">04</span>
+            <h3 class="service-accordion__title">Beauty &amp; Nagels</h3>
+            <span class="service-accordion__toggle">+</span>
+          </button>
+          <div class="service-accordion__body">
+            <div class="service-accordion__content">
+              <ul class="price-list">
+                <li><span>Manicure</span><span>vanaf 29,50</span></li>
+                <li><span>Gellak handen</span><span>vanaf 35,00</span></li>
+                <li><span>Pedicure</span><span>vanaf 34,50</span></li>
+                <li><span>Wenkbrauwen epileren</span><span>vanaf 12,50</span></li>
+                <li><span>Wenkbrauwen verven</span><span>vanaf 15,00</span></li>
+                <li><span>Wimpers verven</span><span>vanaf 17,50</span></li>
+                <li><span>Gezichtsbehandeling</span><span>vanaf 59,00</span></li>
+              </ul>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="services__cta reveal" data-delay="500">
+      <a href="#booking" class="btn btn--primary btn--lg magnetic-btn">Boek jouw behandeling</a>
+    </div>
+  </section>
+
+  <!-- Team -->
+  <section class="team" id="team">
+    <div class="team__header">
+      <span class="label label--center reveal">Ons team</span>
+      <h2 class="section-title section-title--center reveal" data-delay="100">De mensen achter <span class="text-accent">Amara</span></h2>
+    </div>
+    <div class="team__grid">
+      <div class="team__member reveal" data-delay="100">
+        <div class="team__photo">
+          <img src="https://images.unsplash.com/photo-1580618672591-eb180b1a973f?w=500&q=80" alt="Amara Yilmaz" loading="lazy" />
+          <div class="team__photo-overlay">
+            <p>Oprichtster en creatief directeur. Amara heeft haar opleiding gevolgd in Istanbul en Amsterdam en brengt het beste van twee werelden samen.</p>
+          </div>
+        </div>
+        <h3 class="team__name">Amara Yilmaz</h3>
+        <span class="team__role">Eigenaar &amp; Master Stylist</span>
+      </div>
+      <div class="team__member reveal" data-delay="200">
+        <div class="team__photo">
+          <img src="https://images.unsplash.com/photo-1595959183082-7b570b7e1e6b?w=500&q=80" alt="Sophie de Vries" loading="lazy" />
+          <div class="team__photo-overlay">
+            <p>Gespecialiseerd in balayage en kleurwerk. Sophie weet als geen ander hoe ze kleur tot leven brengt, altijd met oog voor de natuurlijke uitstraling.</p>
+          </div>
+        </div>
+        <h3 class="team__name">Sophie de Vries</h3>
+        <span class="team__role">Kleurspecialist</span>
+      </div>
+      <div class="team__member reveal" data-delay="300">
+        <div class="team__photo">
+          <img src="https://images.unsplash.com/photo-1622287162716-f311baa1a2b8?w=500&q=80" alt="Yusuf Kaya" loading="lazy" />
+          <div class="team__photo-overlay">
+            <p>De barber van het team. Yusuf combineert traditionele Turkse scheertechnieken met moderne mannencuts. Precies en gepassioneerd.</p>
+          </div>
+        </div>
+        <h3 class="team__name">Yusuf Kaya</h3>
+        <span class="team__role">Senior Barber</span>
+      </div>
+      <div class="team__member reveal" data-delay="400">
+        <div class="team__photo">
+          <img src="https://images.unsplash.com/photo-1487412720507-e7ab37603c6f?w=500&q=80" alt="Lisa Jansen" loading="lazy" />
+          <div class="team__photo-overlay">
+            <p>Onze beauty specialist. Lisa verzorgt alle nagel- en gezichtsbehandelingen en heeft een achtergrond in de professionele make-up industrie.</p>
+          </div>
+        </div>
+        <h3 class="team__name">Lisa Jansen</h3>
+        <span class="team__role">Beauty Specialist</span>
+      </div>
+    </div>
+  </section>
+
+  <!-- Parallax Break -->
+  <section class="parallax-break">
+    <div class="parallax-break__bg" style="background-image: url('https://images.unsplash.com/photo-1521590832167-7bcbfaa6381f?w=1400&q=80')"></div>
+    <div class="parallax-break__overlay"></div>
+    <div class="parallax-break__content reveal">
+      <blockquote class="parallax-break__quote">
+        Mooi haar is geen toeval. Het is het resultaat van vertrouwen, vakmanschap en de juiste aandacht.
+      </blockquote>
+      <cite class="parallax-break__cite">Amara Yilmaz</cite>
+    </div>
+  </section>
+
+  <!-- Reviews -->
+  <section class="reviews" id="reviews">
+    <span class="label label--center reveal">Reviews</span>
+    <h2 class="section-title section-title--center reveal" data-delay="100">Wat onze klanten zeggen</h2>
+    <p class="reviews__sub reveal" data-delay="150">Meer dan 200 beoordelingen met een gemiddelde van 4,9 sterren.</p>
+    <div class="reviews__grid">
+      <div class="review-card reveal" data-delay="200">
+        <div class="review-card__stars"></div>
+        <p class="review-card__text">"Al jaren mijn vaste salon. Amara luistert echt naar wat je wilt en adviseert eerlijk. Mijn balayage is elke keer weer perfect."</p>
+        <span class="review-card__name">Marieke B.</span>
+      </div>
+      <div class="review-card reveal" data-delay="300">
+        <div class="review-card__stars"></div>
+        <p class="review-card__text">"Eindelijk een barber die snapt wat ik bedoel. Yusuf is een tovenaar met de schaar. De hot towel shave is een ervaring op zich."</p>
+        <span class="review-card__name">Thomas K.</span>
+      </div>
+      <div class="review-card reveal" data-delay="400">
+        <div class="review-card__stars"></div>
+        <p class="review-card__text">"De sfeer is fantastisch, je voelt je meteen op je gemak. Sophie heeft mijn haar een prachtige warme kleur gegeven. Absolute aanrader."</p>
+        <span class="review-card__name">Fatima A.</span>
+      </div>
+      <div class="review-card reveal" data-delay="500">
+        <div class="review-card__stars"></div>
+        <p class="review-card__text">"Ik neem mijn twee dochters altijd mee naar Salon Amara. Geduldig, vriendelijk en het resultaat is altijd mooi. Top salon."</p>
+        <span class="review-card__name">Ingrid V.</span>
+      </div>
+      <div class="review-card reveal" data-delay="600">
+        <div class="review-card__stars"></div>
+        <p class="review-card__text">"De keratine behandeling heeft mijn haar compleet getransformeerd. Zijdezacht en glanzend. Het team weet echt wat ze doen."</p>
+        <span class="review-card__name">Deniz Y.</span>
+      </div>
+      <div class="review-card reveal" data-delay="700">
+        <div class="review-card__stars"></div>
+        <p class="review-card__text">"Professioneel en tegelijkertijd heel persoonlijk. Ik voel me hier geen nummer. De gellak van Lisa houdt weken lang perfect."</p>
+        <span class="review-card__name">Charlotte M.</span>
+      </div>
+    </div>
+  </section>
+
+  <!-- Hours -->
+  <section class="hours" id="openingstijden">
+    <div class="hours__layout">
+      <div class="hours__info">
+        <span class="label reveal">Openingstijden</span>
+        <h2 class="section-title reveal" data-delay="100">Wanneer je ons<br>kunt <span class="text-accent">bereiken</span></h2>
+        <p class="reveal" data-delay="200">Loop gerust binnen of maak een afspraak via onze online booking. Wij bevinden ons aan de Breestraat in het centrum van Leiden.</p>
+        <a href="#booking" class="btn btn--primary magnetic-btn reveal" data-delay="300">Afspraak maken</a>
+      </div>
+      <div class="hours__table-wrap reveal" data-delay="150">
+        <div class="hours__table" id="hours-table">
+          <!-- Filled by JS -->
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Booking -->
+  <section class="booking" id="booking">
+    <div class="booking__inner">
+      <span class="label label--center reveal">Reserveren</span>
+      <h2 class="section-title section-title--center reveal" data-delay="100">Maak direct een <span class="text-accent">afspraak</span></h2>
+      <p class="booking__sub reveal" data-delay="200">Kies je behandeling, je stylist en een moment dat jou uitkomt.</p>
+      <div class="booking__widget reveal" data-delay="300" id="booking-widget">
+        <!-- Booking widget loads here -->
+      </div>
+    </div>
+  </section>
+
+  <!-- Contact -->
+  <section class="contact" id="contact">
+    <div class="contact__layout">
+      <div class="contact__info">
+        <span class="label label--light reveal">Contact</span>
+        <h2 class="section-title section-title--light reveal" data-delay="100">Kom langs of neem contact op</h2>
+        <p class="contact__text reveal" data-delay="200">Heb je een vraag of wil je meer weten over onze behandelingen? Neem gerust contact met ons op. We helpen je graag.</p>
+        <div class="contact__details reveal" data-delay="300">
+          <div class="contact__detail">
+            <strong>Adres</strong>
+            <span>Breestraat 42</span>
+            <span>2311 CS Leiden</span>
+          </div>
+          <div class="contact__detail">
+            <strong>Telefoon</strong>
+            <a href="tel:0712345678">071 - 234 5678</a>
+          </div>
+          <div class="contact__detail">
+            <strong>Email</strong>
+            <a href="mailto:info@salonamara.nl">info@salonamara.nl</a>
+          </div>
+        </div>
+        <div class="contact__actions reveal" data-delay="400">
+          <a href="#booking" class="btn btn--primary btn--lg magnetic-btn">Afspraak maken</a>
+          <div class="contact__socials">
+            <a href="#" aria-label="Instagram">
+              <svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><rect x="2" y="2" width="20" height="20" rx="5"/><circle cx="12" cy="12" r="5"/><circle cx="17.5" cy="6.5" r="1.5" fill="currentColor" stroke="none"/></svg>
+            </a>
+            <a href="#" aria-label="Facebook">
+              <svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><path d="M18 2h-3a5 5 0 00-5 5v3H7v4h3v8h4v-8h3l1-4h-4V7a1 1 0 011-1h3z"/></svg>
+            </a>
+          </div>
+        </div>
+      </div>
+      <div class="contact__map-wrap reveal reveal--right">
+        <div class="contact__map-placeholder">
+          <svg width="48" height="48" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1"><path d="M21 10c0 7-9 13-9 13s-9-6-9-13a9 9 0 0118 0z"/><circle cx="12" cy="10" r="3"/></svg>
+          <span>Breestraat 42, Leiden</span>
+          <a href="https://maps.google.com/?q=Breestraat+42+Leiden" target="_blank" rel="noopener noreferrer" class="btn btn--sm btn--outline">Bekijk op Google Maps</a>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Footer -->
+  <footer class="footer">
+    <div class="footer__vacatures" id="footer-vacatures" style="display:none">
+      <div class="footer__vacatures-inner">
+        <h3 class="footer__vacatures-title">Werken bij Salon Amara</h3>
+        <div class="footer__vacatures-list" id="footer-vacatures-list">
+          <!-- Dynamically loaded -->
+        </div>
+      </div>
+    </div>
+    <div class="footer__main">
+      <div class="footer__inner">
+        <div class="footer__brand">
+          <span class="footer__logo-text">Salon <span class="footer__logo-accent">Amara</span></span>
+          <span class="footer__address">Breestraat 42, 2311 CS Leiden</span>
+        </div>
+        <div class="footer__links">
+          <a href="#over-ons">Over ons</a>
+          <a href="#diensten">Diensten</a>
+          <a href="#team">Team</a>
+          <a href="#contact">Contact</a>
+        </div>
+        <div class="footer__copy">&copy; 2026 Salon Amara</div>
+      </div>
+      <div class="footer__demo-banner">
+        Dit is een demowebsite, gebouwd door <a href="https://ensalabs.nl" target="_blank" rel="noopener noreferrer">Ensa Labs</a> met <a href="https://dedigitalestylist.nl" target="_blank" rel="noopener noreferrer">De Digitale Stylist</a>
+      </div>
+    </div>
+  </footer>
+
+  <!-- Booking widget script -->
+  <script src="https://dds-booking.netlify.app/widget/booking-widget.js" data-salon="salon-amara"></script>
+  <script type="module" src="/src/main.js"></script>
+</body>
+</html>

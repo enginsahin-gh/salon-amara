@@ -1,0 +1,33 @@
+{
+  "hero": {
+    "tag": "Premium kapsalon in Leiden",
+    "titel_regel1": "Schoonheid",
+    "titel_regel2": "begint",
+    "titel_accent": "hier",
+    "subtitel": "Bij Salon Amara geloven we dat ieder mens uniek is. Ons team van specialisten creëert looks die passen bij wie je bent, niet bij wat de trend voorschrijft.",
+    "cta_tekst": "Boek een afspraak",
+    "achtergrond_foto": ""
+  },
+  "over_ons": {
+    "titel": "Waar vakmanschap<br>samenkomt met <span class=\"text-accent\">warmte</span>",
+    "tekst_1": "Salon Amara is opgericht door Amara Yilmaz met een duidelijke visie: een salon waar iedereen zich welkom voelt en waar kwaliteit geen compromissen kent. Gelegen aan de Breestraat in het hart van Leiden, combineren we ambachtelijke technieken met de nieuwste trends.",
+    "tekst_2": "Ons team van vier ervaren stylisten brengt samen meer dan veertig jaar ervaring mee. Van een klassieke coupe tot een complete metamorfose, van natuurlijke highlights tot verzorgende treatments: bij Amara ben je in vertrouwde handen.",
+    "stats": [
+      { "nummer": "12+", "label": "Jaar ervaring" },
+      { "nummer": "4", "label": "Specialisten" },
+      { "nummer": "2.400+", "label": "Tevreden klanten" }
+    ],
+    "foto_main": "https://images.unsplash.com/photo-1560066984-138dadb4c035?w=800&q=80",
+    "foto_float": "https://images.unsplash.com/photo-1522337360788-8b13dee7a37e?w=400&q=80"
+  },
+  "diensten": {
+    "subtitel": "Van knippen en kleuren tot beauty treatments. Ontdek wat Salon Amara voor jou kan betekenen."
+  },
+  "reviews": {
+    "subtitel": "Meer dan 200 beoordelingen met een gemiddelde van 4,9 sterren."
+  },
+  "contact": {
+    "tekst": "Heb je een vraag of wil je meer weten over onze behandelingen? Neem gerust contact met ons op. We helpen je graag.",
+    "maps_url": "https://maps.google.com/?q=Breestraat+42+Leiden"
+  }
+}

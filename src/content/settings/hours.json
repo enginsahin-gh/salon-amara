@@ -1,0 +1,9 @@
+{
+  "maandag": { "open": "09:00", "sluit": "18:00", "gesloten": false },
+  "dinsdag": { "open": "09:00", "sluit": "18:00", "gesloten": false },
+  "woensdag": { "open": "09:00", "sluit": "18:00", "gesloten": false },
+  "donderdag": { "open": "09:00", "sluit": "21:00", "gesloten": false },
+  "vrijdag": { "open": "09:00", "sluit": "21:00", "gesloten": false },
+  "zaterdag": { "open": "09:00", "sluit": "17:00", "gesloten": false },
+  "zondag": { "open": "", "sluit": "", "gesloten": true }
+}

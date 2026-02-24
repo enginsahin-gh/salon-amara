@@ -1,0 +1,232 @@
+backend:
+  name: test-repo
+
+media_folder: "src/content/uploads"
+public_folder: "/content/uploads"
+
+locale: "nl"
+
+collections:
+  # Settings: Salon Info
+  - name: "salon"
+    label: "Salon Info"
+    files:
+      - name: "info"
+        label: "Salon Gegevens"
+        file: "src/content/settings/salon.json"
+        fields:
+          - { name: "naam", label: "Salonnaam", widget: "string" }
+          - name: "adres"
+            label: "Adres"
+            widget: "object"
+            fields:
+              - { name: "straat", label: "Straat + huisnummer", widget: "string" }
+              - { name: "postcode", label: "Postcode", widget: "string" }
+              - { name: "plaats", label: "Plaats", widget: "string" }
+          - { name: "telefoon", label: "Telefoon (weergave)", widget: "string" }
+          - { name: "telefoonLink", label: "Telefoon (link, zonder spaties)", widget: "string" }
+          - { name: "email", label: "Email", widget: "string" }
+          - { name: "bookingUrl", label: "Booking URL (optioneel)", widget: "string", required: false }
+          - name: "socials"
+            label: "Social Media"
+            widget: "object"
+            fields:
+              - { name: "instagram", label: "Instagram URL", widget: "string", required: false }
+              - { name: "facebook", label: "Facebook URL", widget: "string", required: false }
+          - name: "quote"
+            label: "Quote (parallax sectie)"
+            widget: "object"
+            fields:
+              - { name: "tekst", label: "Quote tekst", widget: "text" }
+              - { name: "auteur", label: "Auteur", widget: "string" }
+
+  # Settings: Page Content
+  - name: "paginas"
+    label: "Pagina Teksten"
+    files:
+      - name: "content"
+        label: "Pagina Content"
+        file: "src/content/settings/pages.json"
+        fields:
+          - name: "hero"
+            label: "Hero Sectie"
+            widget: "object"
+            fields:
+              - { name: "tag", label: "Tag regel", widget: "string" }
+              - { name: "titel_regel1", label: "Titel regel 1", widget: "string" }
+              - { name: "titel_regel2", label: "Titel regel 2", widget: "string" }
+              - { name: "titel_accent", label: "Titel accent woord", widget: "string" }
+              - { name: "subtitel", label: "Subtitel", widget: "text" }
+              - { name: "cta_tekst", label: "CTA knop tekst", widget: "string" }
+              - { name: "achtergrond_foto", label: "Achtergrond foto", widget: "image", required: false }
+          - name: "over_ons"
+            label: "Over Ons"
+            widget: "object"
+            fields:
+              - { name: "titel", label: "Titel (HTML toegestaan)", widget: "string" }
+              - { name: "tekst_1", label: "Alinea 1", widget: "text" }
+              - { name: "tekst_2", label: "Alinea 2", widget: "text" }
+              - name: "stats"
+                label: "Statistieken"
+                widget: "list"
+                fields:
+                  - { name: "nummer", label: "Nummer", widget: "string" }
+                  - { name: "label", label: "Label", widget: "string" }
+              - { name: "foto_main", label: "Hoofdfoto", widget: "image" }
+              - { name: "foto_float", label: "Kleine foto", widget: "image" }
+          - name: "diensten"
+            label: "Diensten sectie"
+            widget: "object"
+            fields:
+              - { name: "subtitel", label: "Subtitel", widget: "text" }
+          - name: "reviews"
+            label: "Reviews sectie"
+            widget: "object"
+            fields:
+              - { name: "subtitel", label: "Subtitel", widget: "text" }
+          - name: "contact"
+            label: "Contact sectie"
+            widget: "object"
+            fields:
+              - { name: "tekst", label: "Tekst", widget: "text" }
+              - { name: "maps_url", label: "Google Maps URL", widget: "string" }
+
+  # Settings: Opening Hours
+  - name: "openingstijden"
+    label: "Openingstijden"
+    files:
+      - name: "uren"
+        label: "Openingstijden"
+        file: "src/content/settings/hours.json"
+        fields:
+          - name: "maandag"
+            label: "Maandag"
+            widget: "object"
+            fields:
+              - { name: "open", label: "Open", widget: "string", required: false }
+              - { name: "sluit", label: "Sluit", widget: "string", required: false }
+              - { name: "gesloten", label: "Gesloten", widget: "boolean" }
+          - name: "dinsdag"
+            label: "Dinsdag"
+            widget: "object"
+            fields:
+              - { name: "open", label: "Open", widget: "string", required: false }
+              - { name: "sluit", label: "Sluit", widget: "string", required: false }
+              - { name: "gesloten", label: "Gesloten", widget: "boolean" }
+          - name: "woensdag"
+            label: "Woensdag"
+            widget: "object"
+            fields:
+              - { name: "open", label: "Open", widget: "string", required: false }
+              - { name: "sluit", label: "Sluit", widget: "string", required: false }
+              - { name: "gesloten", label: "Gesloten", widget: "boolean" }
+          - name: "donderdag"
+            label: "Donderdag"
+            widget: "object"
+            fields:
+              - { name: "open", label: "Open", widget: "string", required: false }
+              - { name: "sluit", label: "Sluit", widget: "string", required: false }
+              - { name: "gesloten", label: "Gesloten", widget: "boolean" }
+          - name: "vrijdag"
+            label: "Vrijdag"
+            widget: "object"
+            fields:
+              - { name: "open", label: "Open", widget: "string", required: false }
+              - { name: "sluit", label: "Sluit", widget: "string", required: false }
+              - { name: "gesloten", label: "Gesloten", widget: "boolean" }
+          - name: "zaterdag"
+            label: "Zaterdag"
+            widget: "object"
+            fields:
+              - { name: "open", label: "Open", widget: "string", required: false }
+              - { name: "sluit", label: "Sluit", widget: "string", required: false }
+              - { name: "gesloten", label: "Gesloten", widget: "boolean" }
+          - name: "zondag"
+            label: "Zondag"
+            widget: "object"
+            fields:
+              - { name: "open", label: "Open", widget: "string", required: false }
+              - { name: "sluit", label: "Sluit", widget: "string", required: false }
+              - { name: "gesloten", label: "Gesloten", widget: "boolean" }
+
+  # Diensten
+  - name: "diensten"
+    label: "Diensten"
+    folder: "src/content/diensten"
+    extension: "json"
+    format: "json"
+    create: true
+    slug: "{{slug}}"
+    identifier_field: "naam"
+    fields:
+      - { name: "categorie", label: "Categorie", widget: "select", options: ["Dames", "Heren", "Kinderen", "Beauty"] }
+      - { name: "naam", label: "Dienst naam", widget: "string" }
+      - { name: "prijs", label: "Prijs", widget: "string", hint: "Bijv. 'vanaf 39,50' of 'op aanvraag'" }
+      - { name: "duur", label: "Duur (optioneel)", widget: "string", required: false }
+      - { name: "sort", label: "Sorteervolgorde", widget: "number", value_type: "int" }
+      - { name: "actief", label: "Actief", widget: "boolean", default: true }
+
+  # Team
+  - name: "team"
+    label: "Team"
+    folder: "src/content/team"
+    extension: "json"
+    format: "json"
+    create: true
+    slug: "{{slug}}"
+    identifier_field: "naam"
+    fields:
+      - { name: "naam", label: "Naam", widget: "string" }
+      - { name: "functie", label: "Functie", widget: "string" }
+      - { name: "bio", label: "Bio", widget: "text" }
+      - { name: "foto", label: "Foto", widget: "image" }
+      - { name: "sort", label: "Sorteervolgorde", widget: "number", value_type: "int" }
+
+  # Reviews
+  - name: "reviews"
+    label: "Reviews"
+    folder: "src/content/reviews"
+    extension: "json"
+    format: "json"
+    create: true
+    slug: "{{slug}}"
+    identifier_field: "naam"
+    fields:
+      - { name: "naam", label: "Naam reviewer", widget: "string" }
+      - { name: "sterren", label: "Sterren", widget: "number", value_type: "int", min: 1, max: 5 }
+      - { name: "tekst", label: "Review tekst", widget: "text" }
+      - { name: "datum", label: "Datum", widget: "datetime", format: "YYYY-MM-DD", date_format: "DD-MM-YYYY", time_format: false }
+
+  # Announcements
+  - name: "announcements"
+    label: "Meldingen"
+    folder: "src/content/announcements"
+    extension: "json"
+    format: "json"
+    create: true
+    slug: "{{slug}}"
+    identifier_field: "tekst"
+    fields:
+      - { name: "tekst", label: "Melding tekst", widget: "text" }
+      - { name: "type", label: "Type", widget: "select", options: ["info", "warning", "success", "urgent"] }
+      - { name: "startDatum", label: "Start datum", widget: "datetime", required: false }
+      - { name: "eindDatum", label: "Eind datum", widget: "datetime", required: false }
+      - { name: "dismissible", label: "Kan weggeklikt worden", widget: "boolean", default: true }
+      - { name: "actief", label: "Actief", widget: "boolean", default: true }
+
+  # Vacatures
+  - name: "vacatures"
+    label: "Vacatures"
+    folder: "src/content/vacatures"
+    extension: "json"
+    format: "json"
+    create: true
+    slug: "{{slug}}"
+    identifier_field: "titel"
+    fields:
+      - { name: "titel", label: "Functietitel", widget: "string" }
+      - { name: "uren", label: "Uren", widget: "string", hint: "Bijv. '32-38 uur per week'" }
+      - { name: "omschrijving", label: "Omschrijving", widget: "text" }
+      - { name: "eisen", label: "Eisen (optioneel)", widget: "text", required: false }
+      - { name: "contactMethode", label: "Contact methode", widget: "select", options: ["email", "telefoon", "formulier"] }
+      - { name: "actief", label: "Actief", widget: "boolean", default: true }
