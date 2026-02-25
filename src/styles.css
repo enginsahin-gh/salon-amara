@@ -1179,3 +1179,11 @@ body.has-announcement .hero { margin-top: 44px; }
   color: var(--gold);
   font-weight: 600;
 }
+
+/* Fallback: reveal all content after animation delay in case JS fails */
+@keyframes forceReveal {
+  to { opacity: 1; transform: none; }
+}
+.reveal {
+  animation: forceReveal 0s 3s forwards;
+}
