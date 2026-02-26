@@ -338,7 +338,7 @@
       <span class="label label--center reveal">Reserveren</span>
       <h2 class="section-title section-title--center reveal" data-delay="100">Maak direct een <span class="text-accent">afspraak</span></h2>
       <p class="booking__sub reveal" data-delay="200">Kies je behandeling, je stylist en een moment dat jou uitkomt.</p>
-      <div class="booking__widget reveal" data-delay="300" id="dds-booking-widget" data-salon="salon-amara">
+      <div class="booking__widget reveal" data-delay="300" id="dds-booking-widget" data-salon="salon-amara" data-color-primary="#C6956C" data-color-bg="#FAF6F1" data-color-bg-secondary="#F3ECE4" data-color-text="#2C2420" data-font="'DM Sans', system-ui, sans-serif">
         <!-- Booking widget loads here -->
       </div>
     </div>
@@ -419,7 +419,22 @@
   </footer>
 
   <!-- Booking widget script -->
-  <script src="https://dds-booking-v2.netlify.app/widget.js" data-salon="salon-amara"></script>
+  <link rel="stylesheet" href="https://dds-booking-widget.netlify.app/widget.css" />
+  <style>
+    /* Minimal overrides — theme set via data attributes on the widget container */
+    #dds-booking-widget {
+      max-width: 100%;
+    }
+  </style>
+  <script>
+    // Load booking widget after DOM is ready
+    window.addEventListener('DOMContentLoaded', function() {
+      var s = document.createElement('script');
+      s.src = 'https://dds-booking-widget.netlify.app/widget.js';
+      s.dataset.salon = 'salon-amara';
+      document.body.appendChild(s);
+    });
+  </script>
   <script type="module" src="/src/main.js"></script>
   <script>
     if (window.netlifyIdentity) {
